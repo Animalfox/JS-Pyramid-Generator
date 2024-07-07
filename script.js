@@ -1,17 +1,21 @@
 /**
  * @file Main file for node project.
  * @author Animalfox <a72e@outlook.com>
- * @description Step 42
- * Remember in your previous loop that you used the addition operator + to
- * increase the value of i by 1.
+ * @description Step 43
+ * Now all of your numbers are appearing on the same line.
+ * This will not work for creating a pyramid.
  *
- * You can do a similar thing with a string value, by appending a new string to
- * an existing string. For example, hello = hello + " World"; would add the
- * string " World" to the existing string stored in the hello variable.
- * This is called concatenation.
+ * You will need to add a new line to each row.
+ * However, pressing the return key to insert a line break between quotes in
+ * JavaScript will result in a parsing error.
+ * Instead, you need to use the special escape sequence \n, which is interpreted
+ * as a new line when the string is logged. For example:
  *
- * In your for...of loop, use the addition operator to concatenate the row value
- * to the result value.
+ * Example Code
+ * lineOne = lineOne + "\n" + lineTwo;
+ *
+ * Use a second addition operator to concatenate a new line between the existing
+ * result value and the added row value.
  */
 const character = "#";
 const count = 8;
@@ -21,6 +25,6 @@ for (let i = 0; i < count; i = i + 1) {
 }
 let result = "";
 for (const row of rows) {
-  result = result + row;
+  result = result + "\n" + row;
 }
 console.log(result);
