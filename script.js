@@ -2,14 +2,13 @@
  * @file Main file for node project.
  * @author Animalfox <a72e@outlook.com>
  * @description
- * Step 29
- * Were you expecting to see 4 in the console? .push() returns the new length of
- * the array, after adding the value you give it.
+ * Step 30
+ * Change your rows declaration to be assigned an empty array again.
  *
- * It is important to be aware of what values a method returns.
- * Take some time to experiment with .push() and .pop(). When you are ready,
- * remove all of your .push() and .pop() calls, and your console.log statements.
+ * Also, change your 'Hello' string to use double quotes again.
+ * Generally, it does not matter which of the two you prefer, but you will want
+ * to be consistent in that choice throughout your project.
  */
-let character = 'Hello';
+let character = "Hello";
 let count = 8;
-let rows = ["Naomi", "Quincy", "CamperChan"];
+let rows = [];
