@@ -1,23 +1,17 @@
 /**
  * @file Main file for node project.
  * @author Animalfox <a72e@outlook.com>
- * @description Step 41
- * To manipulate the result string, you will use a different type of loop.
- * Specifically, a for...of loop, which iterates over each item in an iterable
- * object and temporarily assigns it to a variable.
+ * @description Step 42
+ * Remember in your previous loop that you used the addition operator + to
+ * increase the value of i by 1.
  *
- * The syntax for a for...of loop looks like:
+ * You can do a similar thing with a string value, by appending a new string to
+ * an existing string. For example, hello = hello + " World"; would add the
+ * string " World" to the existing string stored in the hello variable.
+ * This is called concatenation.
  *
- * Example Code
- * for (const value of iterable) {
- *
- * }
- *
- * Note that you can use const because the variable only exists for a single
- * iteration, not during the entire loop.
- *
- * Create a for...of loop to iterate through your rows array,
- * assigning each value to a row variable.
+ * In your for...of loop, use the addition operator to concatenate the row value
+ * to the result value.
  */
 const character = "#";
 const count = 8;
@@ -27,5 +21,6 @@ for (let i = 0; i < count; i = i + 1) {
 }
 let result = "";
 for (const row of rows) {
+  result = result + row;
 }
 console.log(result);
