@@ -2,9 +2,9 @@
   "name": "js-pyramid-generator",
   "version": "1.0.0",
   "description": "Learn Introductory JavaScript by Building a Pyramid Generator",
-  "main": "index.js",
+  "main": "script.js",
   "scripts": {
-    "dev": "node index.js",
+    "dev": "node script.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
