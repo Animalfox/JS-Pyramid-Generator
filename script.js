@@ -2,25 +2,28 @@
  * @file Main file for node project.
  * @author Animalfox <a72e@outlook.com>
  * @description
- * Step 33
- * To generate a pyramid, you will need to create multiple rows.
- * When you have to perform a task repeatedly until a condition is met, you will
- * use a loop. There are many ways to write a loop.
+ * Step 34
+ * Your loop now needs a proper iterator. The iterator is a variable you can
+ * declare specifically in your for loop to control how the loop iterates or
+ * goes through your logic.
  *
- * You are going to start with a basic for loop.
- * for loops use the following syntax:
- *
+ * It is a common convention to use i as your iterator variable in a loop.
+ * A for loop allows you to declare this in the parentheses ().
+ * For example, here is a for loop that declares an index variable and assigns
+ * it the value 100.
+ * 
  * Example Code
- * for (iterator; condition; iteration) {
- *   logic;
+ * for (let index = 100; "second"; "third") {
+ * 
  * }
  *
- * In the upcoming steps, you'll explore each component of a loop in detail.
- * For now, construct a for loop that includes the terms "iterator",
- * "condition", and "iteration" for the three components.
- * Keep the loop body, the section within the curly braces {}, empty.
+ * Replace the string "iterator" with a let declaration for the variable i.
+ * Assign it the value 0 to start.
+ * This will give the i variable the value 0 the first time your loop runs.
  */
 const character = "#";
 const count = 8;
 const rows = [];
-for ("iterator"; "condition"; "iteration") {}
+for (let i = 0; "condition"; "iteration") {
+
+}
