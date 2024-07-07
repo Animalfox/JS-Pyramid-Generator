@@ -1,28 +1,23 @@
 /**
  * @file Main file for node project.
  * @author Animalfox <a72e@outlook.com>
- * @description Step 45
- * Now you have a series of # characters, but the pyramid shape is still
- * missing. Fortunately, the i variable represents the current "row" number in
- * your loop, enabling you to use it for crafting a pyramid-like structure.
- *
- * To achieve this, you will use the .repeat() method available to strings.
- * This method accepts a number as an argument, specifying the number of times
- * to repeat the target string.
- * For example, using .repeat() to generate the string "Code! Code! Code!":
- *
- * Example Code
- * const activity = "Code! ";
- * activity.repeat(3);
- *
- * Use the .repeat() method on your character, and give it i for the number.
+ * @description Step 46
+ * You're getting closer!
+ * At this point, you're encountering what's known as an off-by-one error,
+ * a frequent problem in zero-based indexing languages like JavaScript.
+ * 
+ * The first index of your rows array is 0, which is why you start your for loop
+ * with i = 0. But repeating a string zero times results in nothing to print.
+ * 
+ * To fix this, add 1 to the value of i in your .repeat() call.
+ * Do not assign it back to i like you did in your loop conditions.
  */
 const character = "#";
 const count = 8;
 const rows = [];
 
 for (let i = 0; i < count; i = i + 1) {
-  rows.push(character.repeat(i));
+  rows.push(character.repeat(i + 1));
 }
 
 let result = "";
