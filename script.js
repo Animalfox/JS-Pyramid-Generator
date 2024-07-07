@@ -2,20 +2,19 @@
  * @file Main file for node project.
  * @author Animalfox <a72e@outlook.com>
  * @description
- * Step 27
- * Another method essential for this project is the .pop() method.
- * It removes the last element from an array and returns that element.
+ * Step 28
+ * You should have seen "freeCodeCamp" printed to the console.
+ * This is because .pop() returns the value that was removed from the array -
+ * and you pushed "freeCodeCamp" to the end of the array earlier.
  *
- * When a method returns a value, you can think of it as giving the value back
- * to you, making it available for use in other parts of your code.
- *
- * Create a new variable called popped and assign it the result of rows.pop().
- * Then, log popped to the console.
+ * But what does .push() return? Assign your existing rows.push() to a new
+ * pushed variable, and log it.
  */
 let character = 'Hello';
 let count = 8;
 let rows = ["Naomi", "Quincy", "CamperChan"];
-rows.push("freeCodeCamp");
+let pushed = rows.push("freeCodeCamp");
+console.log(pushed);
 let popped = rows.pop();
 console.log(popped);
 console.log(rows);
