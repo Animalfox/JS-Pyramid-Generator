@@ -1,24 +1,21 @@
 /**
  * @file Main file for node project.
  * @author Animalfox <a72e@outlook.com>
- * @description Step 35
- * The condition of a for loop tells the loop how many times it should iterate.
- * When the condition becomes false, the loop will stop.
+ * @description Step 36
+ * Your iteration statement will tell your loop what to do with the iterator
+ * after each run.
  *
- * In JavaScript, a Boolean value can be either true or false.
- * These are not strings - you will learn more about the difference later on.
+ * When you reassign a variable, you can use the variable to reference the
+ * previous value before the reassignment. This allows you to do things like add
+ * three to an existing number. For example, bees = bees + 3; would increase the
+ * value of bees by three.
  *
- * For now, you will use the less than operator (<).
- * This allows you to check if the value on the left is less than the value on
- * the right. For example, count < 3 would evaluate to true if count is 2, and
- * false if count is 4.
- *
- * Replace your "condition" string with a condition to check if i is less than
- * count.
+ * Use that syntax to replace your "iteration" string with a reassignment
+ * statement that increases i by one.
  */
 const character = "#";
 const count = 8;
 const rows = [];
-for (let i = 0; i < count; "iteration") {
+for (let i = 0; i < count; i = i + 1) {
 
 }
