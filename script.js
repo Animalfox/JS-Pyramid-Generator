@@ -1,26 +1,20 @@
 /**
  * @file Main file for node project.
  * @author Animalfox <a72e@outlook.com>
- * @description 48
- * In order to use a function, you need to call it. A function call tells your
- * application to run the code from the function wherever you choose to call it.
- * The syntax for a function call is the function name followed by parentheses.
- * For example, this code defines and calls a test function.
+ * @description Step 49
+ * You are calling your padRow function, but not doing anything with that
+ * function call. All functions in JavaScript return a value, meaning they
+ * provide the defined result of calling them for you to use elsewhere.
  * 
- * Example Code
- * function test() {
- * 
- * }
- * test();
- * 
- * Call your padRow function.
+ * To see the result of calling your padRow function, declare a call variable
+ * and assign your existing padRow call to that variable.
  */
 const character = "#";
 const count = 8;
 const rows = [];
 
 function padRow() {}
-padRow();
+const call = padRow();
 
 for (let i = 0; i < count; i = i + 1) {
   rows.push(character.repeat(i + 1));
